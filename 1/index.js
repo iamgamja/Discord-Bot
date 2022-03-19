@@ -3,10 +3,6 @@ const intents = new Discord.Intents(0b111111111111111);
 const client = new Discord.Client({ intents: intents });
 
 (async ()=>{
-  // discord-modal START
-  require('discord-modals')(client);
-  // discird-modal END
-
   await require('/app/1/setup/commands.js')(client);
 
   await require('/app/1/setup/log.js')(client);
