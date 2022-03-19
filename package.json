@@ -16,8 +16,7 @@
     "base65536": "^4.0.2",
     "chart.js-image": "^6.0.3",
     "ytdl-core": "^4.9.2",
-    "fluent-ffmpeg": "^2.1.2",
-    "discord-modals": "^1.2.2"
+    "fluent-ffmpeg": "^2.1.2"
   },
   "scripts": {
     "start": "node index.js",
