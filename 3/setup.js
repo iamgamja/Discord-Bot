@@ -1,2 +1,3 @@
 const {execSync} = require('child_process');
-execSync('pip', ['install', '-r', 'requirements.txt']);
+// py -m ensurepip --default-pip
+execSync('pip install -r requriements.txt');
