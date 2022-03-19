@@ -14,9 +14,11 @@ process2.stdout.on("data", function (data) {
 
 process1.stderr.on("data", function (data) {
   console.error(data.toString());
+  throw Error('kill');
 });
 process2.stderr.on("data", function (data) {
   console.error(data.toString());
+  throw Error('kill');
 });
 
 console.log('start');
