@@ -18,7 +18,7 @@ process2.stdout.on("data", outCb);
 process2.stderr.on("data", errCb);
 
 (async () => {
-  await spawnPromiss('pip', ['install', '-r', 'requirements.txt']);
+  await spawnPromiss('pip', ['install', '-r', './3/requirements.txt']);
   const process3 = spawn("python", ["/app/3/index.py"]);
   process3.stdout.on("data", outCb);
   process3.stderr.on("data", errCb);
