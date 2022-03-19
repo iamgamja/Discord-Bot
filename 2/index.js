@@ -1,11 +1,6 @@
-const fs = require('fs');
-
 const Discord = require("discord.js");
-
 const intents = new Discord.Intents(0b111111111111111);
 const client = new Discord.Client({ intents: intents });
-
-const ChartJSImage = require('chart.js-image');
 
 client._ = {};
 client._.TongGye = {};

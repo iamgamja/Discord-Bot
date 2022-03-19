@@ -2,6 +2,8 @@ const fs = require('fs');
 fs.RF=(e=>new Promise((f,i)=>{fs.readFile(e,"utf8",function(e,n){e?i(e):f(n)})}));
 function Date_(){const d=new Date;return d.setHours(d.getHours()+9),d}
 
+const Discord = require("discord.js");
+
 module.exports = async (client) => {
   client.TongGye = async () => {
     try {

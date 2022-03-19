@@ -1,3 +1,5 @@
+const ChartJSImage = require('chart.js-image');
+
 module.exports = async (client) => {
   client._.TongGye.f3 = async () => {
     try {
