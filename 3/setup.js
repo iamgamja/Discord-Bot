@@ -1,4 +1,5 @@
 const {execSync} = require('child_process');
 
-execSync('python -m ensurepip --default-pip');
+// do something to install pip
+
 execSync('pip install -r requriements.txt');
