@@ -1,0 +1,12 @@
+**템플릿 명령어 사용 방법:**
+1. `/template create` 명령어로 새로운 템플릿을 생성합니다.
+2. `/template channel add` 명령어로 템플릿에 채널을 등록합니다.
+3. `/template apply` 명령어로 템플릿을 적용합니다.
+
+**기타 주의사항:**
+1. `/template default` 명령어로 기본 템플릿을 현재 상태로 설정합니다.
+2. `/template reset` 명령어로 템플릿들을 초기화합니다.
+3. `/template channel remove` 명령어로 템플릿에 등록된 채널을 삭제합니다.
+4. `/template remove` 명령어로 템플릿을 삭제합니다.
+5. `/template list` 명령어로 템플릿 목록을 출력합니다. 
+6. `/template channel list` 명령어로 템플릿에 등록된 채널 목록을 출력합니다.

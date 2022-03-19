@@ -1,0 +1,36 @@
+{
+  "name": "iamgamja-bot",
+  "version": "1.0.0",
+  "description": "discord bot project.",
+  "main": "index.js",
+  "dependencies": {
+    "discord.js": "^13.1.0",
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "discord-api-types": "^0.23.1",
+    "@discordjs/builders": "^0.6.0",
+    "inko": "git://github.com/iamgamja/inko.git",
+    "canvas": "^2.8.0",
+    "request": "^2.88.2",
+    "sharp": "^0.29.2",
+    "axios": "^0.24.0",
+    "base65536": "^4.0.2",
+    "chart.js-image": "^6.0.3",
+    "ytdl-core": "^4.9.2",
+    "fluent-ffmpeg": "^2.1.2",
+    "discord-modals": "^1.2.2"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error ee: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Node.js",
+    "discord",
+    "bot"
+  ],
+  "engines": {
+    "node": "16.8.0"
+  },
+  "author": "iamgamja",
+  "license": "ISC"
+}
