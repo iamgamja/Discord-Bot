@@ -6,8 +6,7 @@ function errCb(data) {
   throw Error('kill');
 }
 
-const spawn = require("child_process").spawn;
-const spawnPromiss = require('util').promisify(spawn);
+const {spawn} = require("child_process");
 
 const process1 = spawn("node", ["/app/1/index.js"]);
 process1.stdout.on("data", outCb);
@@ -17,11 +16,9 @@ const process2 = spawn("node", ["/app/2/index.js"]);
 process2.stdout.on("data", outCb);
 process2.stderr.on("data", errCb);
 
-(async () => {
-  await spawnPromiss('pip', ['install', '-r', './3/requirements.txt']);
-  const process3 = spawn("python", ["/app/3/index.py"]);
-  process3.stdout.on("data", outCb);
-  process3.stderr.on("data", errCb);
-})();
+require('/app/3/setup.js'); // import modules
+const process3 = spawn("python", ["/app/3/index.py"]);
+process3.stdout.on("data", outCb);
+process3.stderr.on("data", errCb);
 
 console.log('start');
