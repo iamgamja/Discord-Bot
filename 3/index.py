@@ -1269,7 +1269,5 @@ async def on_message(message):
             if case == 2:
                 await message.channel.send("랭크업에 성공하였습니다!")
         await message.add_reaction(체크)
-        
 
-access_token = os.environ["BOR_TOKEN"]
-client.run(access_token)
+client.run(os.environ["TOKEN3"])
