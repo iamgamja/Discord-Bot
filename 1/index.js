@@ -10,8 +10,6 @@ const client = new Discord.Client({ intents: intents });
 
   // Event
   await require('/app/1/setup/event/ready.js')(client);
-  await require('/app/1/setup/event/interactionCreate.js')(client);
-  await require('/app/1/setup/event/modalSubmit.js')(client);
   await require('/app/1/setup/event/messageCreate.js')(client);
 
   client.login(process.env.TOKEN1);
