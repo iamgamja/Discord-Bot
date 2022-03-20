@@ -16,9 +16,9 @@ const process2 = spawn("node", ["/app/2/index.js"]);
 process2.stdout.on("data", outCb);
 process2.stderr.on("data", errCb);
 
-require('/app/3/setup.js'); // import modules
-const process3 = spawn("python", ["/app/3/index.py"]);
-process3.stdout.on("data", outCb);
-process3.stderr.on("data", errCb);
+// require('/app/3/setup.js'); // import modules
+// const process3 = spawn("python", ["/app/3/index.py"]);
+// process3.stdout.on("data", outCb);
+// process3.stderr.on("data", errCb);
 
 console.log('start');
