@@ -17,7 +17,7 @@ module.exports = async (client) => {
       if (!event) {
         client.channels.cache.get('956573678638878730').setName('그리고 아무도 생일이지 않았다');
       } else {
-        client.channels.cache.get('956573678638878730').setName(`${event.name.slice(0,-3)} 생일`);
+        client.channels.cache.get('956573678638878730').setName(`${event.name.slice(0,-3)} 집`);
       }
 
     } catch(e) { await client.Error(e) }
