@@ -10,7 +10,7 @@ module.exports = async (client) => {
     try {
   
       const event = client.guilds.cache.get('843811221433352214').scheduledEvents.cache.find(e => {
-        return e.name.endswith('생일') &&
+        return e.name.endsWith('생일') &&
           sameDay(D2Date_(e.scheduledStartAt), D2Date_(new Date));
       });
 
