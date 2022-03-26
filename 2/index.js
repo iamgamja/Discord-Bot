@@ -15,6 +15,7 @@ client._.TongGye = {};
   await require('/app/2/setup/TongGye/f1.js')(client);
   await require('/app/2/setup/TongGye/f2.js')(client);
   await require('/app/2/setup/TongGye/f3.js')(client);
+  await require('/app/2/setup/TongGye/f4.js')(client);
   await require('/app/2/setup/TongGye/index.js')(client);
 
   // Event
