@@ -18,6 +18,8 @@ module.exports = async (client) => {
       await client.db.add(['TongGye', 'B', hour], B[0]); // db에 메시지수 넣기
   
       if (hour === 23) {
+        client._.TongGye.f4();
+
         const C = await client._.TongGye.f3(); // buffer, 그래프 이미지
         await client.channels.cache.get('920536110382329907').send({ files: [new Discord.MessageAttachment(C, 'chart.png')] });
   
