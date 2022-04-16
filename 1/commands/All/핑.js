@@ -9,6 +9,6 @@ exports.run = async ({client, message}) => {
 exports.help = {
   '': '핑을 합니다(?).'
 }
-exports.permission =['All'];
+exports.permission = ['All'];
 exports.MsLength = [0];
 exports.name = ['.핑'];

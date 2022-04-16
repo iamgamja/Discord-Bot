@@ -1,8 +1,18 @@
+const { MessageActionRow, MessageButton } = require('discord.js');
+
 exports.run = async ({client, message}) => {
   try {
-
-    await message.reply('https://discord.com/oauth2/authorize?&client_id=711729588543160330&scope=bot&permissions=8');
     
+		const row = new MessageActionRow()
+    .addComponents(
+      new MessageButton()
+        .setLabel('초대하러 가기!')
+        .setStyle('LINK')
+        .setURL('https://discord.com/oauth2/authorize?&client_id=711729588543160330&scope=bot&permissions=8')
+    );
+
+    await message.reply({ components: [row] });
+
   } catch (e) { await client.Error(e, message); }
 };
 
