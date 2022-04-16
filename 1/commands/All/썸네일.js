@@ -1,12 +1,12 @@
 const Youtube = require('youtube-node');
 const youtube = new Youtube();
 youtube.setKey(process.env.DEVELOPER_KEY);
-youtube.addParam('type', 'video');
+// youtube.addParam('type', 'video');
 
 /** @async */
 const search = (word, limit) => {
   return new Promise((resolve, reject) => {
-    youtube.search(word, limit, function(err, result) {
+    youtube.search(word, limit, {type: 'video'}, function(err, result) {
       if (err)
         reject(err);
       else
