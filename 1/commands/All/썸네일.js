@@ -23,9 +23,7 @@ exports.run = async ({client, message, Ms}) => {
     const item = result.items[0];
     
     const title = item.snippet.title;
-    client.log(item.snippet.thumbnails, JSON.stringify(item.snippet.thumbnails), typeof item.snippet.thumbnails);
-    client.log(item.snippet.thumbnails.values, JSON.stringify(item.snippet.thumbnails.values), typeof item.snippet.thumbnails.values);
-    const thumbnail1 = item.snippet.thumbnails.values().sort((a,b) => {
+    const thumbnail1 = Object.values(item.snippet.thumbnails).sort((a,b) => {
       return a.width-b.width;
     }).at(-1).url;
     const id = item.id.videoId;
