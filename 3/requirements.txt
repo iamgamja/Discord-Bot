@@ -1,8 +1,0 @@
-discord.py
-discord-components
-requests
-google-api-python-client
-google
-google_auth_oauthlib
-beautifulsoup4
-wolframalpha
