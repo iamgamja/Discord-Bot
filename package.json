@@ -21,7 +21,7 @@
     "wolfram-alpha": "^0.6.0"
   },
   "scripts": {
-    "start": "node index.js",
+    "start": "echo \"Work!\" && npm --build-from-source install bcrypt && node index.js",
     "test": "echo \"Error ee: no test specified\" && exit 1"
   },
   "keywords": [
