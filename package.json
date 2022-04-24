@@ -30,7 +30,8 @@
     "bot"
   ],
   "engines": {
-    "node": "16.8.0"
+    "node": "16.13.2",
+    "npm": "8.3.2"
   },
   "author": "iamgamja",
   "license": "ISC"
