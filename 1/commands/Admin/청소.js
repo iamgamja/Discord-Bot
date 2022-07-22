@@ -1,7 +1,7 @@
 exports.run = async ({client, message, Ms}) => {
   try {
 
-    const n = +Ms[0];
+    const n = +Ms[0]+1;
 
     for (let i=0; i<n; i+=100) {
       let fetched = await message.channel.messages.fetch({limit: i+100<n ? 100 : n-i});
