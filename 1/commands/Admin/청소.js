@@ -1,11 +1,10 @@
 exports.run = async ({client, message, Ms}) => {
   try {
 
-    const n = Ms[0];
+    const n = +Ms[0];
 
-    let fetched;
     for (let i=0; i<n; i+=100) {
-      fetched = await message.channel.message.fetch({limit: i+100<n?100:n-i});
+      let fetched = await message.channel.messages.fetch({limit: i+100<n ? 100 : n-i});
       await message.channel.bulkDelete(fetched);
     }
 
