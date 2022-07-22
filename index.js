@@ -3,7 +3,7 @@ function outCb(data) {
 }
 function errCb(data) {
   console.error(data.toString());
-  throw Error('kill');
+  setTimeout(() => process.exit(0), 1000);
 }
 
 const {spawn} = require("child_process");

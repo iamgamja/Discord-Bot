@@ -3,7 +3,8 @@ const intents = new Discord.Intents(0b111111111111111);
 const client = new Discord.Client({ intents: intents });
 
 client._ = {};
-client._.Loops = {};
+client.TongGye = {};
+client.Loops = {};
 
 (async () => {
   await require('/app/2/setup/log.js')(client);
