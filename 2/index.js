@@ -3,7 +3,6 @@ const intents = new Discord.Intents(0b111111111111111);
 const client = new Discord.Client({ intents: intents });
 
 client._ = {};
-client.TongGye = {};
 client.Loops = {};
 
 (async () => {
