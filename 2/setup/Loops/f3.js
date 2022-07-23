@@ -1,7 +1,7 @@
 const ChartJSImage = require('chart.js-image');
 
 module.exports = async (client) => {
-  client.TongGye.f3 = async () => {
+  client.Loops.f3 = async () => {
     try {
   
       const line_chart = ChartJSImage().chart({
