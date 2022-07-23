@@ -5,7 +5,7 @@ function Date_(){const d=new Date;return d.setHours(d.getHours()+9),d}
 const Discord = require("discord.js");
 
 module.exports = async (client) => {
-  client.Loops = async () => {
+  client.Loops.run = async () => {
     try {
   
       const date = Date_();
