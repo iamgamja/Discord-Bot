@@ -20,7 +20,7 @@ module.exports = async (client) => {
       if (hour === 23) {
         client.Loops.f4(); // 생일
 
-        const C = await client._.Loops.f3(); // buffer, 그래프 이미지
+        const C = await client.Loops.f3(); // buffer, 그래프 이미지
         await client.channels.cache.get('920536110382329907').send({ files: [new Discord.MessageAttachment(C, 'chart.png')] });
   
         await client.db.add(['TongGye', 'B'], new Array(24).fill(0)); // 재설정
