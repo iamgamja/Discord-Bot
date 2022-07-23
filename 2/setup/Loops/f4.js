@@ -6,7 +6,7 @@ function sameDay(d1, d2) {
 }
 
 module.exports = async (client) => {
-  client.TongGye.f4 = async () => {
+  client.Loops.f4 = async () => {
     try {
   
       const event = client.guilds.cache.get('843811221433352214').scheduledEvents.cache.find(e => {
