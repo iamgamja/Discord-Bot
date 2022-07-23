@@ -14,12 +14,12 @@ module.exports = async (client) => {
       const leftTime = 60*60*1000 - (now1*60*1000) - (now2*1000) + 1*60*1000; // 정각까지 남은 시간+1분(밀리초 단위)
       setTimeout(async function() {
         try {
-          await client.TongGye();
+          await client.Loops.run();
           timer = setInterval(async function() {
             try {
-              await client.TongGye();
+              await client.Loops.run();
             } catch(e) { await client.Error(e) }
-          }, 60*60*1000); // 1시간마다 client.TongGye 실행
+          }, 60*60*1000); // 1시간마다 client.Loops.run 실행
         } catch(e) { await client.Error(e) }
       }, leftTime);
   
