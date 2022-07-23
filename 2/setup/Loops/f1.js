@@ -1,7 +1,7 @@
 Math.sum = (...arr) => arr.reduce((a,b)=>a+b, 0);
 
 module.exports = async (client) => {
-  client.TongGye.f1 = async () => {
+  client.Loops.f1 = async () => {
     try { 
   
       let dataNum = {
