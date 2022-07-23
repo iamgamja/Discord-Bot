@@ -1,7 +1,7 @@
 Math.sum = (...arr) => arr.reduce((a,b)=>a+b, 0);
 
 module.exports = async (client) => {
-  client.TongGye.f2 = async () => {
+  client.Loops.f2 = async () => {
     try {
   
       const countMsg = async (channel, lastMsgId=null) => {
